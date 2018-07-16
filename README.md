@@ -3,7 +3,7 @@
 
 This is brief script written for the Insight Data Engineering Fellowship. I was presented with the problem of analyzing a sample pharmaceutical dataset. Input files provide the name of drugs, their prescribers and costs. Prospective fellows were tasked with creating new files that included the number of unique prescribers for each drug and their total cost. Though it was not specified by the assignment, I elected to sort the output file by cost simply to make it easier to find the most expensive drugs.
 
-The analysis is written in python, making use of the pandas data analysis plugin (the only library that doesn't come standard.) I have included a sample input file with 500 entries, and the resulting output that is obtained by running the script on the sample. The sample file is a reduced version of a pharmaceutical provided by the facilitators of the fellowship selection process.
+The analysis is written in python, making use of the pandas data analysis library (the only library that doesn't come standard.) I have included a sample input file with 1000 entries, and the resulting output that is obtained by running the script on the sample. The sample file is a reduced version of a pharmaceutical provided by the facilitators of the fellowship selection process.
 
 ## Getting Started
 
@@ -25,7 +25,6 @@ id,prescriber_last_name,prescriber_first_name,drug_name,drug_cost
 
 There is a sample printed in the bellow section and included in the /input/ file.
 
-The data contained in this sample was provided by the fellowship
 ## Running Instructions
 The program is fairly straightforward to run, taking only a few parameters. The defaults are set to run on the sample input, and save to the same location as the sample output. A full description of these parameters are displayed below. These defaults are written with the understanding that the code is being run from the directory containing the input and output files directories contained in this repository.
 * -i point to the location of a properly .txt input file. If no input is specified the script will use the sample input
