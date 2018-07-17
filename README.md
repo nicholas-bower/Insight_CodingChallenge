@@ -1,9 +1,9 @@
 # Insight Coding Challenge
 
 
-This is brief script written for the Insight Data Engineering Fellowship. I was presented with the problem of analyzing a sample pharmaceutical dataset. Input files provide the name of drugs, their prescribers and costs. Prospective fellows were tasked with creating new files that included the number of unique prescribers for each drug and their total cost. Though it was not specified by the assignment, I elected to sort the output file by cost simply to make it easier to find the most expensive drugs.
+This is a brief script written for the Insight Data Engineering Fellowship. I was presented with the problem of analyzing a sample pharmaceutical dataset. Input files provide the name of drugs, their prescribers and costs. Prospective fellows were tasked with creating new files that included the number of unique prescribers for each drug and their total cost. Though it was not specified by the assignment, I elected to sort the output file by cost, simply to make it easier to find the most expensive drugs.
 
-The analysis is written in python, making use of the pandas data analysis library (the only library that doesn't come standard.) I have included a sample input file with 1000 entries, and the resulting output that is obtained by running the script on the sample. The sample file is a reduced version of a pharmaceutical provided by the facilitators of the fellowship selection process.
+The analysis is written in python, making use of the pandas data analysis library (the only library needed that doesn't come standard.) I have included a sample input file with 1000 entries, and the resulting output that is obtained by running the script on the sample. The sample file is a reduced version of a pharmaceutical provided by the facilitators of the fellowship selection process.
 
 ## Getting Started
 
@@ -66,4 +66,4 @@ AMITRIPTYLINE HCL,1,692.78
 
 ## My approach
 
-Pandas is perfectly tailored to this challenge, to the extent that it almost feels like cheating. Pandas is able to use operations which work significantly more efficiently than line by line analysis methods using for loops. I was able to easily subdivide that dataset by drug name, and find the number of unique prescribers for each subdivision and sum up the total amount spent on each drug using methods contained in the pandas library. From there it was simply a matter of creating a new dataframe to sort and save containing all the required information.
+Pandas is perfectly tailored to this challenge, to the extent that it almost feels like cheating. Pandas is able to use operations which work significantly more efficiently than line by line analysis methods using for or while loops. I was able to easily subdivide the dataset by drug name. From there I again used simple pandas methods to find the number of unique prescribers for each subdivision and sum up the total amount spent on each drug. After collecting all the needed information it was simply a matter of creating a new dataframe to sort and save to a new file, containing all the required information in the proper format.
