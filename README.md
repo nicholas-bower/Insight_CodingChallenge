@@ -33,9 +33,8 @@ The program is fairly straightforward to run, taking only a few parameters. The 
 * -n how many entries from the input file to include in the analysis. For testing it is often useful to only run over a small subset of the data. Entering a negative number or not including this argument will simply make the script run on all input entries.
 
 ### Running with run.sh
-Calling run.sh will simply run the script with the default arguments. To pass other arguments you must either change the run.sh file, or  simply run the script directly as described in the bellow section. It is important not to forget to change the permissions for the shell script to allow it to run.
+Calling run.sh will simply run the script with the default arguments. To pass other arguments you must either change the run.sh file, or  simply run the script directly as described in the below section. 
 ```
-chmod run.sh --x
 ./run.sh
 ```
 ### Running the script without use of the .sh script
