@@ -16,7 +16,7 @@ conda install pandas
 ```
 or using PyPl
 ```
-python3 -m pip install --upgrade pandas
+pip install pandas
 ```
 ### Input Files
 This analysis takes input files formated in the following columns seperated by commas (',') :
@@ -32,11 +32,15 @@ The program is fairly straightforward to run, taking only a few parameters. The 
 * -h specify the location of the header line (aka a line in the input data file which labels each of the columns.) The sample file includes a header on the first line and presumably all inputs will be in this format, but on the off chance they aren't this argument has been included. If no header is present enter 0.
 * -n how many entries from the input file to include in the analysis. For testing it is often useful to only run over a small subset of the data. Entering a negative number or not including this argument will simply make the script run on all input entries.
 
-
-
-An example run command looks like this:
+### Running with run.sh
+Calling run.sh will simply run the script with the default arguments. To pass other arguments you must either change the run.sh file, or  simply run the script directly as described in the bellow section.
 ```
-python Pharma_DataAnalyzer.py -i ./input/reduced_de_cc_data.txt -h 1 -n 5 -o ./output/top_cost_drug.txt
+run.sh
+```
+### Running the script without use of the .sh script
+An example run command looks like this running from the main directory:
+```
+python /src/Pharma_DataAnalyzer.py -i ./input/reduced_de_cc_data.txt -h 1 -n 5 -o ./output/top_cost_drug.txt
 ```
 This will take the first 5 lines of the sample input:
 ```
@@ -56,6 +60,8 @@ AMBIEN CR,1,4792.29
 AMANTADINE,1,1129.94
 AMITRIPTYLINE HCL,1,692.78
 ```
+
+
 
 ## My approach
 
