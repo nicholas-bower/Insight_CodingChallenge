@@ -67,3 +67,9 @@ AMITRIPTYLINE HCL,1,692.78
 ## My approach
 
 Pandas is perfectly tailored to this challenge, to the extent that it almost feels like cheating. Pandas is able to use operations which work significantly more efficiently than line by line analysis methods using for or while loops. I was able to easily subdivide the dataset by drug name. From there I again used simple pandas methods to find the number of unique prescribers for each subdivision and sum up the total amount spent on each drug. After collecting all the needed information it was simply a matter of creating a new dataframe to sort and save to a new file, containing all the required information in the proper format.
+
+## Test Suit
+I add the test suit to test the same checks which the selection commity will use when evaluating my code. The code was provided by the group who issued the challenge. The test can be run by moving to the insight_testsuit directory and calling:
+```
+./run_tests.sh
+```
