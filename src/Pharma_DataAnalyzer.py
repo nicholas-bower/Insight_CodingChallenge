@@ -5,7 +5,7 @@ from decimal import Decimal
 parser = argparse.ArgumentParser(description='ST processing options.', conflict_handler="resolve")
 
 #### Read In parameters####
-parser.add_argument('-i', '--input', default='./input/reduced_de_cc_data.txt', help='Input file location.', type=str)
+parser.add_argument('-i', '--input', default='./input/itcont.txt', help='Input file location.', type=str)
 parser.add_argument('-o', '--output', default='./output/top_cost_drug.txt', help='Output file location.', type=str)
 parser.add_argument('-n', '--n_entries', default=-1, help='Number of entries to run on(enter -1 for all entries)',
                     type=int)
